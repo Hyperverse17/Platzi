@@ -38,10 +38,14 @@ console.log(resultado===0.3) // "===" sirve para comparar tanto VALOR como TIPO
 const raizCuadrada = Math.sqrt(16)
 const valorAbsoluto = Math.abs(-7)
 const aleatorio = Math.random() // Regresa un número aleatorio entre 0 y 1 uniformememnte distribuido
+// Este tipo de operaciones se pueden anidar
+
+const numeroAleatorio = Math.floor(Math.random() * 10 + 1) // * 10 + 1 significa del "1 al 10" 
 
 console.log(raizCuadrada)
 console.log(valorAbsoluto)
 console.log(aleatorio)
+console.log(numeroAleatorio)
 
 //////////////////
 // Cuál es la diferencia entre const y let???
