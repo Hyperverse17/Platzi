@@ -49,3 +49,13 @@ let frutas = ['manzana', 'banano', 'uvas']
 // function
 function saludar () {} // Cambia la palabra reservada let por function
 
+/* Diferencias entre var, let y const
+
+Key   - Scope   - Hoisting - Reasignable? - Redeclarable?
+-------------------------------------------------------
+var   - Función - Sí       - Sí           - Sí
+let   - Bloque  - No       - Sí           - No
+Const - Bloque  - No        - No          - No 
+
+*/
+
