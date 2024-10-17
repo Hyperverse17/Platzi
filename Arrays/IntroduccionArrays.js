@@ -45,21 +45,21 @@ const recipeeIngredients = [
 ]
 console.log(recipeeIngredients)
 
-/*console.log('----- Clase 2 -----')
-// Mutability
+console.log('----- Clase 2 -----')
+// Mutability (Transformar el array)
 
-fruits.push('watermelon')
+fruits.push('watermelon') // el método .push agrega elementos
 console.log(fruits)
 
-// Immutability
+// Immutability (crear nuevos arrays a partir de existemtes)
 
-const newFruits = fruits.concat(['grape', 'kiwi'])
+const newFruits = fruits.concat(['grape', 'kiwi']) // crea el nuevo array newFruits a partir de fruits y concatenando grape y kiwi; el método .concat no modifica el array al que se aplica.
 console.log(fruits)
 console.log(newFruits)
 
 // Checking arrays with Array.isArray()
 
-const isArray = Array.isArray(fruits)
+const isArray = Array.isArray(fruits) // el método isArray verifica si algún elemento es un arreglo, retorna un booleano
 console.log(isArray)
 
 // Practical exercise: sum all elements of an array.
@@ -71,5 +71,12 @@ for (let i = 0; i < numbersArray.length; i++) {
   sum += numbersArray[i]
 }
 
-console.log(sum)*/
+console.log(sum)
+
+// Truco matemático: La suma de los primeros n números naturales es n(n+1)/2
+
+let sum2 = numbersArray.length * (numbersArray.length + 1)/2
+
+console.log(sum2)
+
 
