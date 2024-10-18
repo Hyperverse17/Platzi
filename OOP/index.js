@@ -7,8 +7,8 @@
 const Persona = { // Nótese el uso del = antes de las llaves
     nombre: "Heidi",
     apellido : "Galicia",
-    edad: 33,
-    estatura: 1.78,
+    edad: 10,
+    estatura: 0.30,
     // Las propiedades pueden a su vez tener subpropiedades
     direccion: { 
         calle: "Canalito", // Nótese que en este caso no se usa =, se usa :
