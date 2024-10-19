@@ -6,7 +6,9 @@ class Persona{
         this.nombre = parametro1
         this.apellido = parametro2
         this.edad = parametro3
+        this.NombreCompleto = parametro1+" "+parametro2
     }
+    
     saludar(input){
         console.log("Hola,",input,"mi nombre es",this.nombre)
     }
@@ -14,3 +16,5 @@ class Persona{
 
 Heidi = new Persona("Heidi","Galicia",10)
 Heidi.saludar("Lola")
+
+console.log(Heidi.NombreCompleto)
