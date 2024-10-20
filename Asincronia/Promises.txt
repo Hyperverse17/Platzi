@@ -22,3 +22,10 @@ Reject: Una función que se llama cuando la operación asincrónica falla. Se le
 Encadenamiento de promesas:
 
 Las promesas se pueden encadenar utilizando los métodos then() y catch(). El método then() se utiliza para procesar el valor devuelto cuando la promesa se resuelve, mientras que el método catch() se utiliza para manejar errores y finally() se ejecuta al finalizar, independiente al resultado
+
+¿Qué hace la función asíncrona?
+Lo que hace que la operación sea asíncrona es el uso de setTimeout.
+
+setTimeout es una función asíncrona que pone en cola la función proporcionada para que se ejecute después de un cierto período de tiempo (en este caso, 3000 milisegundos o 3 segundos).
+La función que se pasa a setTimeout (() => { ... }) se ejecutará después de 3 segundos. Esto es lo que introduce el comportamiento asíncrono.
+Mientras tanto, el flujo de ejecución del programa continúa, y cualquier código después de la creación de la promesa se ejecutará inmediatamente sin esperar a que setTimeout termine.
