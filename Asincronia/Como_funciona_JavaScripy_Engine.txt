@@ -1,0 +1,8 @@
+
+Proceso:
+
+1. El JavaScript Engine ejecuta el código desde la Call Stack (pila de llamadas).
+2. Cuando una operación asíncrona se encuentra (como una solicitud de red), se envía al Web APIs del navegador o a Node APIs en Node.js.
+3. Una vez que la operación asíncrona se completa, su callback se envía a la Task Queue (cola de tareas).
+4. El Event Loop verifica la Call Stack y, si está vacía, mueve el callback de la Task Queue a la Call Stack para su ejecución.
+
