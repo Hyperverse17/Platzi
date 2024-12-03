@@ -33,3 +33,18 @@ PATCH: Se utiliza para actualizar un recurso existente de forma parcial, como al
 
 DELETE: Se utiliza para eliminar un recurso del servidor, como al eliminar un archivo o una publicación de un foro.
 
+
+--------------------------------------------------------------------
+
+Cómo hacer una petición?
+
+Para obtener los botones "POST Content" y "GET Content" desde el DOM en JavaScript, puedes usar document.getElementById o document.querySelector. Suponiendo que los botones tienen identificadores únicos, aquí tienes un ejemplo:
+
+
+const postButton = document.getElementById('postContent');
+const getButton = document.getElementById('getContent');
+Si los botones están dentro de contenedores específicos, asegúrate de ajustar la selección de acuerdo a su estructura HTML. Esto te permitirá añadirles eventos o estilos según sea necesario.
+
+
+
+
