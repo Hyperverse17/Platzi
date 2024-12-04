@@ -1,7 +1,7 @@
 # Aprendiendo Java Script con Node js
 
 ## Objetivo 📋
-_Primeros pasos en Java Script_
+_Ser el repositorio principal de mis cursos en Platzi_
 
 ## Alcance 🚀
 _Personal_
