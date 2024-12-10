@@ -1,0 +1,32 @@
+
+Comprender los conceptos de semántica y sintaxis es crucial en programación. 
+
+La semántica da sentido al código, asegurando consistencia y coherencia en las operaciones, mientras que la sintaxis dicta cómo escribir correctamente el código, siguiendo reglas específicas.
+
+¿Qué es la semántica en programación?
+La semántica en programación se refiere al significado y consistencia del código. Si trabajamos con números, tanto las entradas como las salidas deben ser números para mantener coherencia. Al nombrar variables, debemos hacerlo de manera lógica y significativa para que el código tenga sentido.
+
+¿Cómo afecta la sintaxis al código?
+La sintaxis en programación es el conjunto de reglas que dicta cómo escribir el código correctamente. Cada lenguaje tiene su propia sintaxis, y seguir estas reglas es esencial para evitar errores. Por ejemplo, si iniciamos con un paréntesis, debemos cerrarlo. No hacerlo resultará en errores de sintaxis que el compilador o intérprete señalará.
+
+¿Cómo se manejan errores de sintaxis?
+Cuando hay errores de sintaxis, el compilador o el entorno de desarrollo, como Visual Studio Code, nos indicarán dónde está el problema. Por ejemplo, al olvidar cerrar un paréntesis, obtendremos un mensaje de error que señala esta omisión. Corregir estos errores es esencial para que el código se ejecute correctamente.
+
+¿Qué papel juegan las variables en la semántica?
+Las variables son contenedores de información y su correcto uso es fundamental para la semántica. Al crear una variable, debemos seguir la sintaxis correcta: nombre de la variable, signo de asignación y el valor. Usar nombres descriptivos y relevantes para las variables asegura que el código sea comprensible y lógico.
+
+¿Qué errores comunes pueden ocurrir con las variables?
+Usar nombres de variables que no reflejan su contenido.
+Intentar utilizar palabras reservadas del lenguaje como nombres de variables.
+Iniciar nombres de variables con números, lo cual no está permitido.
+No declarar una variable antes de su uso, lo que generará errores de tipo NameError.
+¿Cómo nombrar correctamente las variables?
+Utilizar nombres descriptivos y significativos.
+Iniciar con letras y seguir con números o caracteres permitidos.
+Evitar palabras reservadas.
+Usar guiones bajos para separar palabras en nombres de variables.
+¿Qué sucede al redefinir variables?
+Redefinir una variable sobrescribirá su valor anterior. Python ejecuta las líneas de código de arriba hacia abajo y de izquierda a derecha, por lo que el último valor asignado a una variable será el que prevalezca.
+
+¿Cómo evitar errores de semántica al nombrar variables?
+Usar nombres de variables que reflejen claramente su propósito. Por ejemplo, si una variable almacena un nombre, debería llamarse nombre y no edad. Esto evita confusiones y asegura que el código sea fácil de entender y mantener.
