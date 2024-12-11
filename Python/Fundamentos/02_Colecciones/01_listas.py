@@ -66,5 +66,3 @@ del numbers[:2] # Elimina elementos desde la primera posición hasta la TERCERA 
 print(numbers)
 del numbers # Elimina por completo la lista
 #print(numbers) # Esta línea regresa un error porque la lista ha dejado de existir
-
-# Bonus!
