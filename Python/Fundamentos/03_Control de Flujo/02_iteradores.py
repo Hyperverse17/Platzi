@@ -6,6 +6,7 @@ print("--- Iteración sobre listas ---")
 numbers = [1,2,3,4,5] # Creación de la lista
 
 iterNums = iter(numbers) # Con la función iter la lista se convierte en un <class 'list_iterator'>
+# iter() toma un objeto iterable (como una lista, una tupla, una cadena, etc.) y devuelve un iterador, que es un objeto que se puede recorrer elemento por elemento usando funciones como next().
 
 value = next(iterNums) # con la función next accedemoos consecutivamente a cada valor de la lista
 print(value)
