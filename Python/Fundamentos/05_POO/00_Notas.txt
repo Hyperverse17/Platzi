@@ -1,0 +1,9 @@
+
+Resumen
+La programación orientada a objetos (POO) es un paradigma de la programación que se basa en organizar el software en objetos, los cuales son instancias de clases. Las clases actúan como plantillas genéricas que definen atributos y comportamientos. Por ejemplo, una clase “Persona” puede tener atributos como nombre, apellido y fecha de nacimiento.
+
+¿Cómo se crean clases y objetos en Python?
+Para crear una clase en Python, se utiliza la palabra reservada class seguida del nombre de la clase con la primera letra en mayúscula. Dentro de la clase, se define un constructor con la función __init__. Esta función inicializa los atributos del objeto.
+
+Self:
+En Python, self es una referencia al objeto actual de una clase y se utiliza dentro de sus métodos para acceder a los atributos y otros métodos del mismo objeto. Es como el "puente" que conecta los datos y comportamientos específicos de una instancia.
