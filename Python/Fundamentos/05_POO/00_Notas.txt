@@ -30,3 +30,7 @@ Herencia: Permite que una clase (hija) herede propiedades y métodos de otra (pa
 Polimorfismo: Permite que objetos de diferentes clases respondan al mismo método de manera única.
     Facilita el uso de una interfaz común para tipos de datos diversos.
     Ejemplo: Diferentes tipos de "Vehículo" implementan el método "mover" de forma distinta.
+
+Super():
+En Python, super() es una función que te permite acceder a métodos o atributos de una clase padre desde una clase hija. 
+Es especialmente útil en el contexto de la herencia para garantizar que las clases derivadas llamen a los métodos de sus clases base correctamente, evitando sobreescrituras accidentales.
