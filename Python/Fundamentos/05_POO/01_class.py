@@ -78,7 +78,7 @@ try:
     print(account1.isActive)
     account1.deactivate()
     print(account1.isActive)
-    #account1.deposit(100)
+    account1.deposit(100)
     print("Reactivacion")
     account1.activate()
     print(account1.isActive)
