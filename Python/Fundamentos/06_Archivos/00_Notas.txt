@@ -1,0 +1,59 @@
+Resumen
+¿Cómo trabajar con archivos CSV en Python?
+Manipular archivos CSV es esencial para gestionar datos tabulares, como registros de inventario, y es fundamental en la ciencia y el análisis de datos. En esta guía, aprenderás a leer, escribir, actualizar y añadir información a archivos CSV utilizando Python.
+
+¿Cómo se lee un archivo CSV?
+Para comenzar, es necesario importar la librería csv en Python, lo cual se hace con el siguiente comando:
+
+import csv
+A continuación, se procede a abrir el archivo en modo lectura especificando su nombre. En este ejemplo, trabajamos con un archivo llamado products.csv que contiene columnas como nombre, precio, cantidad, etc.
+
+with open('products.csv', mode='r') as file:
+    csv_reader = csv.DictReader(file)
+    for row in csv_reader:
+        print(row)
+Esto itera sobre cada fila del archivo y las imprime como diccionarios, donde la llave es el nombre de la columna y el valor es el dato correspondiente.
+
+¿Cómo se visualiza la información por columnas?
+Si se desea visualizar datos específicos por columnas, se puede modificar el código para que imprima solo los valores de interés:
+
+with open('products.csv', mode='r') as file:
+    csv_reader = csv.DictReader(file)
+    for row in csv_reader:
+        print(f"Producto: {row['nombre']}, Precio: {row['precio']}")
+Este fragmento muestra cómo imprimir específicamente la columna de nombres junto con el precio correspondiente de cada producto.
+
+¿Cómo se añade una nueva fila a un CSV?
+Para añadir información al final de un archivo CSV, emplea el modo de apertura "append" ('a'). Aquí creamos un nuevo producto y agregamos sus datos:
+
+new_product = {
+    'nombre': 'Cargador Inalámbrico',
+    'precio': '75',
+    'cantidad': 100,
+    'marca': 'MarcaX',
+    'categoría': 'accesorios',
+    'fecha_entrada': '2023-10-15'
+}
+
+with open('products.csv', mode='a', newline='') as file:
+    writer = csv.DictWriter(file, fieldnames=new_product.keys())
+    writer.writerow(new_product)
+Este ejemplo muestra cómo se estructura un nuevo producto y luego se agrega al archivo existente sin sobrescribir la información previa.
+
+¿Cómo añadir una nueva columna en un archivo CSV?
+A veces es necesario no solo agregar, sino también crear nuevos datos derivados de las operaciones en las columnas existentes, como calcular un valor total. Aquí se ilustra cómo:
+
+with open('products.csv', mode='r') as file:
+    csv_reader = csv.DictReader(file)
+    fieldnames = csv_reader.fieldnames + ['total_value']
+
+    with open('products_updated.csv', mode='w', newline='') as new_file:
+        csv_writer = csv.DictWriter(new_file, fieldnames=fieldnames)
+        csv_writer.writeheader()
+
+        for row in csv_reader:
+            row['total_value'] = float(row['precio']) * int(row['cantidad'])
+            csv_writer.writerow(row)
+Este código añade una nueva columna 'total_value' calculando el precio total multiplicado por la cantidad de cada producto, y guarda los cambios en un archivo nuevo para evitar alterar los datos originales.
+
+Trabajar con archivos CSV en Python te permite manipular datos de forma eficaz, haciéndolo una herramienta poderosa para desarrolladores y científicos de datos. ¿Por qué no intentar crear nuevas operaciones con tus datos? Con práctica y dedicación, dominarás con confianza el arte de la manipulación de archivos CSV.
