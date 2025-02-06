@@ -1,4 +1,4 @@
-# Aprendiendo Java Script con Node js
+# Repositorio de cursos
 
 ## Objetivo 📋
 _Ser el repositorio principal de mis cursos en Platzi_
