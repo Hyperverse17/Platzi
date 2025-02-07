@@ -35,6 +35,7 @@ def divide(x: int, y: int) -> Union[int, float, None]: # En este caso no siempre
     return z
 
 print()
+
 # Se obtienen dos numeros enteros aleatorios
 x: int = random.randint(0,9)
 y: int = random.randint(0,9) 
