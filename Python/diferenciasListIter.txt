@@ -1,9 +1,0 @@
-
-Característica	             iter()	                                 list()                                      map()
-Acepta función?              No                                      No                                          Sí
-Propósito	                 Crea un iterador.	                     Crea una lista.                             aplicar una funci+on a un iterable
-Salida	                     Un objeto iterador.	                 Una nueva lista.                            Iterador con los elementos transformados.
-Uso principal	             Para acceder a los elementos uno a uno. Para transformar un iterable en una lista.  aplicar una funci+on a un iterable
-Ejemplo de entrada	         Cualquier iterable.	                 Cualquier iterable.
-Modifica el objeto original? No. Solo crea un iterador del original. No. Crea una nueva lista
-

@@ -19,3 +19,14 @@ Buenas Prácticas al Sobrecargar Operadores:
 2. Mantén la consistencia: Si sobrecargas un operador como +, asegúrate de que el comportamiento sea consistente con lo que los usuarios esperan (por ejemplo, que la suma de dos vectores realmente sume sus componentes).
 3. Documenta el comportamiento: Aunque la sobrecarga de operadores puede hacer que tu código sea más limpio, es importante que documentes claramente cómo se comportan los operadores sobrecargados, especialmente si tienen un comportamiento no convencional.
 
+Metaprogramacion:
+
+La metaprogramación en Python es una técnica que permite escribir código que modifica o genera código en tiempo de ejecución. En otras palabras, es código que trabaja con código, permitiendo cambiar el comportamiento de clases y funciones de forma dinámica.
+
+¿Cómo se logra la metaprogramación en Python?
+Python ofrece varias herramientas para hacer metaprogramación, entre ellas:
+
+Decoradores (@decorador) → Modifican funciones o clases sin cambiar su código original.
+Metaclases → Controlan la creación de clases antes de que existan.
+Funciones globals() y locals() → Permiten acceder y modificar variables globales y locales dinámicamente.
+exec() y eval() → Ejecutan código Python en tiempo de ejecución.
