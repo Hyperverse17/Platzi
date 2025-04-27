@@ -1,0 +1,20 @@
+
+¿Cómo enfrentar el crecimiento masivo de usuarios en una aplicación?
+Cuando creamos una aplicación, el manejo de tareas puede ser sencillo con pocos usuarios. Sin embargo, a medida que la aplicación gana popularidad, la gestión de un número creciente de solicitudes se complica. ¿Cómo podemos solucionar esto? A través de técnicas de paralelismo y concurrencia. Estas técnicas permiten una administración más eficiente de las tareas, especialmente en situaciones donde se requiere procesar múltiples operaciones de forma simultánea.
+
+¿Qué diferencia al procesamiento secuencial del concurrente y el paralelo?
+
+Procesamiento secuencial: Cada tarea se completa por completo antes de iniciar la siguiente.
+Concurrencia: Comenzamos fragmentos de diversas tareas, pausándolas y retomándolas de forma alterna.
+Paralelismo: Las tareas se ejecutan simultáneamente en diversos núcleos de procesamiento, requiriendo tantos núcleos como tareas en paralelo.
+
+¿Cómo implementar concurrencia usando Python?
+En Python, la librería threading nos permite introducir concurrencia a través de hilos. 
+A continuación, se muestra un ejemplo de cómo realizar esto.
+
+Para implementar paralelismo, utilizamos multiprocessing, que permite la ejecución de procesos de manera paralela
+
+¿Cuándo elegir concurrencia sobre paralelismo?
+Concurrencia: Ideal para tareas que involucran entrada/salida de datos, ya que permite dividir y manejar las tareas asíncronamente.
+Paralelismo: Recomendado para procesos intensivos de cálculo que requieren potencia de procesamiento y pueden ser ejecutados de manera simultánea.
+Estas técnicas no solo optimizan el rendimiento de tu aplicación, sino también mejoran su escalabilidad y eficiencia. Ahora que conoces las bases de la concurrencia y el paralelismo en Python, sigue explorando estas herramientas para dominar el desarrollo de aplicaciones eficientes y avanzadas.
