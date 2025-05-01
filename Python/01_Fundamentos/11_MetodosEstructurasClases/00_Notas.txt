@@ -1,0 +1,32 @@
+
+Imagina que puedes hacer que tus clases personalizadas en Python se comporten como números, listas o cadenas de texto, permitiendo sumar objetos, compararlos y mucho más. ¿Qué pasaría si pudieras redefinir cómo tus clases responden a operaciones comunes como +, -, ==, o incluso <? Esa es la magia de la sobrecarga de operadores.
+
+En esta clase, aprenderás a darle superpoderes a tus objetos para que puedan interactuar de manera intuitiva con los operadores estándar de Python. Ya no se trata solo de crear clases; ahora, tus clases podrán comportarse como cualquier otro tipo de dato nativo de Python, lo que hará tu código más limpio, legible y poderoso.
+
+¿Quieres que tus objetos se sumen como fracciones o se comparen como personas? La sobrecarga de operadores te permitirá hacerlo. Al final de esta lección, estarás creando clases que pueden sumar, restar, comparar y mucho más, llevando tu programación en Python a otro nivel. ¡Vamos a descubrir cómo hacerlo.
+
+1. ¿Qué es la Sobrecarga de Operadores?
+Por defecto, los operadores en Python como + o == solo funcionan con tipos de datos predefinidos (números, cadenas, listas, etc.). Sin embargo, con la sobrecarga de operadores, podemos modificar cómo estos operadores funcionan con nuestras clases personalizadas.
+
+Ejemplo básico de sobrecarga de +:
+Imagina que tienes una clase Vector, y quieres sumar dos vectores usando el operador +. Para esto, usaremos el método mágico __add__.
+
+La sobrecarga no se limita a operadores aritméticos, también podemos redefinir operadores de comparación como ==, <, > para que comparen objetos en función de los atributos que queramos.
+
+Buenas Prácticas al Sobrecargar Operadores:
+
+1. Usa la sobrecarga cuando tenga sentido: No abuses de la sobrecarga de operadores. Solo la utilices cuando sea intuitivo y claro que un operador debe funcionar con tus clases.
+2. Mantén la consistencia: Si sobrecargas un operador como +, asegúrate de que el comportamiento sea consistente con lo que los usuarios esperan (por ejemplo, que la suma de dos vectores realmente sume sus componentes).
+3. Documenta el comportamiento: Aunque la sobrecarga de operadores puede hacer que tu código sea más limpio, es importante que documentes claramente cómo se comportan los operadores sobrecargados, especialmente si tienen un comportamiento no convencional.
+
+Metaprogramacion:
+
+La metaprogramación en Python es una técnica que permite escribir código que modifica o genera código en tiempo de ejecución. En otras palabras, es código que trabaja con código, permitiendo cambiar el comportamiento de clases y funciones de forma dinámica.
+
+¿Cómo se logra la metaprogramación en Python?
+Python ofrece varias herramientas para hacer metaprogramación, entre ellas:
+
+Decoradores (@decorador) → Modifican funciones o clases sin cambiar su código original.
+Metaclases → Controlan la creación de clases antes de que existan.
+Funciones globals() y locals() → Permiten acceder y modificar variables globales y locales dinámicamente.
+exec() y eval() → Ejecutan código Python en tiempo de ejecución.

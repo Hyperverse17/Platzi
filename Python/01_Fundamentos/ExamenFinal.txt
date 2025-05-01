@@ -1,0 +1,100 @@
+
+1. ¿Cuál es la ventaja principal de manejar excepciones en tu código Python?
+Garantizar que no haya errores en el código
+Prevenir que el programa se detenga abruptamente
+
+Manejar excepciones en Python con bloques try-except permite capturar errores en tiempo de ejecución y responder a ellos de manera controlada. Así, el programa puede continuar su ejecución en lugar de fallar inesperadamente.
+
+2. ¿Qué hace la función random.randint(1, 10)?
+Genera un número entero aleatorio entre 1 y 10, inclusive
+
+La función random.randint(1, 10) pertenece al módulo random de Python y devuelve un número entero dentro del rango especificado, incluyendo tanto el límite inferior como el superior. Es útil para juegos, simulaciones y muchas otras aplicaciones.
+
+
+3. ¿Qué indica un guion bajo (_) antes del nombre de un método o atributo en Python?
+Que es un método o atributo protegido y debería ser accedido solo desde la clase o subclases.
+
+En Python, un guion bajo (_) antes del nombre de un atributo o método indica que es una convención para marcarlo como "protegido". Esto significa que su uso está destinado a ser interno dentro de la clase y sus subclases, aunque sigue siendo accesible desde fuera de la clase si se intenta deliberadamente. No hay una restricción real, pero el guion bajo señala a los desarrolladores que no deberían acceder a él directamente.
+Por otro lado, si el nombre del atributo o método lleva doble guion bajo (__), entonces Python aplica el name mangling, lo que dificulta el acceso directo desde fuera de la clase.
+
+4. ¿Cuál es la principal diferencia entre la concurrencia y el asincronismo en Python?
+La concurrencia permite ejecutar varias tareas “simultáneamente” en múltiples hilos o procesos, mientras que la asincronía gestiona tareas dependientes de I/O sin bloquear el programa en un solo hilo.
+
+La concurrencia en Python se logra principalmente a través de hilos (threading) o procesos (multiprocessing), lo que permite ejecutar múltiples tareas casi al mismo tiempo. Sin embargo, debido al Global Interpreter Lock (GIL), los hilos no realmente corren en paralelo en CPU-intensivos, pero pueden ser útiles en tareas de entrada/salida.
+
+El asincronismo, por otro lado, se maneja mediante el módulo asyncio, donde las funciones asíncronas (async) pueden pausar su ejecución (await) para permitir que otras tareas continúen sin bloquear el hilo principal. Esto es ideal para operaciones de I/O como llamadas a bases de datos, solicitudes HTTP o lectura de archivos.
+
+5. ¿Qué decorador debes usar en Python cuando necesitas un método que no dependa de ninguna instancia ni de la clase misma?
+@staticmethod
+
+El decorador @staticmethod se usa en Python para definir un método que no depende de ninguna instancia de la clase ni de la propia clase. Es simplemente una función contenida dentro de una clase, sin acceso a atributos de instancia (self) ni atributos de clase (cls).
+
+6. ¿Cuál es la diferencia clave entre un método estático y un método de clase en Python?
+Un método estático no tiene acceso a la clase ni a la instancia, mientras que un método de clase tiene acceso a la clase a través de cls.
+
+Método estático (@staticmethod): No recibe ningún argumento especial como self o cls. Es simplemente una función dentro de una clase que no depende de la instancia ni de la clase misma.
+Método de clase (@classmethod): Recibe la propia clase como primer argumento (cls), lo que le permite acceder y modificar atributos de clase.
+
+7. Qué es el polimorfismo en la programación orientada a objetos?
+La capacidad de una función, objeto o método de tomar varias formas.
+
+El polimorfismo en la programación orientada a objetos (POO) permite que un mismo método, función u objeto se comporte de diferentes maneras dependiendo del contexto en el que se use. Esto mejora la flexibilidad y la reutilización del código.
+
+Hay dos tipos principales de polimorfismo:
+
+Polimorfismo de método (Sobreescritura): Ocurre cuando una subclase redefine un método de la clase padre con un comportamiento diferente.
+
+Polimorfismo de función (Sobrecarga): Ocurre cuando múltiples funciones tienen el mismo nombre pero diferentes parámetros. En Python, esto se maneja generalmente con argumentos por defecto o *args y **kwargs.
+
+8. ¿Cuál es la principal ventaja de utilizar módulos en Python?
+Mejorar la organización y reutilización del código en proyectos grandes.
+
+Los módulos en Python permiten dividir el código en archivos más pequeños y organizados, facilitando la reutilización y el mantenimiento. En lugar de escribir todas las funciones en un solo archivo, se pueden definir en módulos y luego importarlos cuando se necesiten.
+
+Beneficios de usar módulos:
+Reutilización: Puedes importar y usar código en múltiples proyectos sin necesidad de reescribirlo.
+
+Organización: Facilita la separación lógica del código, haciendo que sea más fácil de entender y mantener.
+
+Evita la duplicación: Reduce la repetición de código, promoviendo buenas prácticas de programación.
+
+9. ¿Cuál es la principal ventaja de usar defaultdict sobre un diccionario estándar en Python?
+defaultdict asigna automáticamente un valor predeterminado a las claves inexistentes, evitando errores al acceder a claves no inicializadas.
+
+En Python, defaultdict es una subclase de dict que permite definir un valor por defecto para claves que aún no existen en el diccionario. Esto evita los errores de KeyError cuando se accede a una clave que no ha sido inicializada.
+
+10. ¿Qué valor toma el atributo name cuando se ejecuta un archivo Python directamente?
+main
+
+En Python, cada archivo que se ejecuta tiene un atributo especial llamado __name__. Si el archivo se ejecuta directamente, el valor de __name__ será __main__, lo que indica que es el punto de entrada del programa.
+
+Sin embargo, si el archivo es importado como un módulo, __name__ tomará el nombre del archivo sin la extensión .py.
+
+11. ¿Cuál de los siguientes fragmentos de código es más eficiente según los principios de simplicidad, claridad y eficiencia?
+python numbers = [1, 2, 3, 4, 5] squares = [x**2 for x in numbers]
+
+12. ¿Qué es la herencia múltiple en Python?
+Cuando una clase hereda de más de una clase padre.
+
+La herencia múltiple en Python ocurre cuando una clase hereda atributos y métodos de dos o más clases padre, permitiendo reutilizar funcionalidades de diferentes clases base en una sola.
+
+13. ¿Qué método mágico se usa en Python para devolver una representación legible para humanos de un objeto cuando se usa print()?
+__str__
+
+En Python, el método mágico __str__ se usa para definir una representación legible para humanos de un objeto cuando se utiliza print() o str().
+
+Por otro lado, __repr__ (opción d) también devuelve una representación del objeto, pero está pensada para los desarrolladores y debe ser lo suficientemente clara como para reconstruir el objeto.
+
+Diferencias clave:
+__str__: Más amigable y pensada para usuarios finales.
+
+__repr__: Más detallada y útil para depuración o desarrollo.
+
+
+14. ¿Cómo se define un diccionario en Python?
+Usando llaves `{}`.
+
+15. ¿Cuál es la principal función de un decorador en Python?
+Un decorador permite modificar o extender el comportamiento de una función sin cambiar su código original.
+
+Un decorador en Python es una función especial que envuelve otra función para modificar o extender su comportamiento, sin necesidad de cambiar directamente el código de la función decorada. Se usa con el símbolo @ antes del nombre del decorador.

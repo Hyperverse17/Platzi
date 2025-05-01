@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Laptop",
+        "price": 1200,
+        "quantity": 4,
+        "brand": "BrandName",
+        "category": "Electronics",
+        "entryDate": "2024-01-05"
+    },
+    {
+        "name": "Mouse",
+        "price": 45,
+        "quantity": 120,
+        "brand": "TechGear",
+        "category": "Accessories",
+        "entryDate": "2024-02-10"
+    },
+    {
+        "name": "Headphones",
+        "price": 150,
+        "quantity": 25,
+        "brand": "SoundMax",
+        "category": "Audio",
+        "entryDate": "2024-03-15"
+    },
+    {
+        "name": "Wireless Charger",
+        "price": 75,
+        "quantity": 100,
+        "brand": "ChargeMaster",
+        "category": "Accessories",
+        "entryDate": "2024-07-01"
+    },
+    {
+        "name": "Keyboard",
+        "price": 75,
+        "quantity": 100,
+        "brand": "The Key",
+        "category": "Accessories",
+        "entryDate": "2024-07-01"
+    },
+    {
+        "name": "Wireless Gamer Controller",
+        "price": 75,
+        "quantity": 100,
+        "brand": "The Freaky Gamer",
+        "category": "Accessories",
+        "entryDate": "2024-07-01"
+    },
+    {
+        "name": "Battery",
+        "price": 75,
+        "quantity": 100,
+        "brand": "Full Energy",
+        "category": "Accessories",
+        "entryDate": "2024-07-01"
+    },
+    {
+        "name": "Coffee Warmer",
+        "price": 30.99,
+        "quantity": 50,
+        "brand": "Death Wish Coffee",
+        "category": "Accesories",
+        "entryDate": "2025-02-05"
+    },
+    {
+        "name": "Coffee Warmer",
+        "price": 30.99,
+        "quantity": 50,
+        "brand": "Death Wish Coffee",
+        "category": "Accesories",
+        "entryDate": "2025-02-05"
+    }
+]
