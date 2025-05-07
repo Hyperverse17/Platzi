@@ -26,3 +26,5 @@ values = ["value1", "value2", "value3", "value4", "value5"]
 
 dict3 = {keys[counter]:values[counter] for counter in range(len(keys))}
 print(dict3)
+print()
+
