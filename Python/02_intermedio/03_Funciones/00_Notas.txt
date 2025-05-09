@@ -1,1 +1,21 @@
+Funciones:
+Es posible crera funciones con y sin retorno, que reciban o no parámetros, con valor de parámetros por default y con retorno múltipl!
+
+
+Scope:
+En Python, el scope (o ámbito) se refiere al lugar donde una variable existe y se puede usar. En otras palabras, el scope determina desde dónde puedes acceder a una variable.
+
+Hay varios tipos de scope, pero los más comunes son:
+
+Local scope: la variable existe solo dentro de una función.
+
+Global scope: la variable existe en todo el programa (fuera de funciones).
+
+Enclosing scope: cuando tienes funciones dentro de funciones.
+
+Built-in scope: cosas que ya vienen con Python (como print, len, etc.).
+
+Funciones Lambda:
+Las funciones lambda en Python son una herramienta increíblemente versátil que se utilizan para crear funciones anónimas y de sintaxis simplificada. En lugar de las tradicionales funciones definidas con def, las lambdas permiten declarar funciones de manera más concisa y clara. Esto es especialmente útil para operaciones sencillas, como incrementos o concatenaciones.
+
 
