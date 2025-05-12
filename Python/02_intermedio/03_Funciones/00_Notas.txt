@@ -18,4 +18,6 @@ Built-in scope: cosas que ya vienen con Python (como print, len, etc.).
 Funciones Lambda:
 Las funciones lambda en Python son una herramienta increíblemente versátil que se utilizan para crear funciones anónimas y de sintaxis simplificada. En lugar de las tradicionales funciones definidas con def, las lambdas permiten declarar funciones de manera más concisa y clara. Esto es especialmente útil para operaciones sencillas, como incrementos o concatenaciones.
 
+Higher-order Functions:
+Una Higher-Order Function (función de orden superior) en Python es una función que recibe otra función como argumento y/o devuelve una función como resultado. Es un concepto central en la programación funcional y Python lo soporta muy bien.
 
