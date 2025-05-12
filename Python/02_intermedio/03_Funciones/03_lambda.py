@@ -26,8 +26,10 @@ numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 # Nota:
 # map no devuelve una lista directamente, sino un objeto especial tipo map, por eso usamos list() para ver los resultados.
 
-squares = list(map(lambda x: x * x, numbers)) # en este caso el argumento "función de map es precisamente Lambda"
-print(squares)  # Resultado: [1, 4, 9, 16, 25]
+squaresTrad = list(map(square, numbers))
+print(squaresTrad, "- Forma tradicional")
+squaresLambda = list(map(lambda x: x * x, numbers)) # en este caso el argumento "función de map es precisamente Lambda"
+print(squaresLambda, "- Con uso de Lambda")  # Resultado: [1, 4, 9, 16, 25]
 print()
 
 print("2. Uso de Lambda con filter():")
