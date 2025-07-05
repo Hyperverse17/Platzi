@@ -1,7 +1,0 @@
-
-def exceptionHierarchy(exception_class, indent=0):
-    print(" " * indent + exception_class.__name__)
-    for subclass in exception_class.__subclasses__():
-        exceptionHierarchy(subclass, indent+4) # recursividad
-
-exceptionHierarchy(Exception)
