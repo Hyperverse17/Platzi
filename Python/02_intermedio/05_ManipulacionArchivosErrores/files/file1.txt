@@ -1,0 +1,12 @@
+
+Hola, Otelo.
+
+Este archivo es parte de tu practica de manejo de archivos en Python.
+Puedes leerlo, modificarlo o agregarle mas lineas.
+Sigue asi con Python y el cafe!
+- Tu compa, ChatGPT
+Nueva linea!
+Nueva linea!
+Nueva linea!
+Nueva linea!
+Nueva linea!

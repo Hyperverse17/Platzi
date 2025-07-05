@@ -1,0 +1,25 @@
+
+Ventajas de next() en rendimiento:
+
+1. Acceso secuencial eficiente: Cuando usas next() para recorrer un iterador, accedes a los elementos uno por uno sin necesidad de crear copias o listas completas en memoria, lo que reduce el consumo de recursos.
+
+2. Lazy evaluation (evaluación perezosa): Los iteradores generan los elementos sobre la marcha cuando se necesitan, en lugar de generar toda la colección en memoria de una sola vez. Esto es útil para manejar datos muy grandes o infinitos.
+
+3. Control granular: Con next(), puedes controlar exactamente cuándo y cuántos elementos avanzas, lo cual puede optimizar operaciones específicas y mejorar el rendimiento en algunos casos.
+
+try, except y finally:
+
+Es una estructura que se usa para manejar errores (también llamados excepciones), de manera que tu programa no se rompa cuando algo sale mal.
+
+Assert:
+
+assert es una palabra clave de Python que se usa para verificar que algo sea verdadero mientras tu programa corre. Si la condición que le das no se cumple, lanza una excepción AssertionError y detiene el programa (a menos que esté manejada).
+
+Es una forma muy útil de incluir verificaciones internas (tests rápidos) mientras desarrollas o depuras tu código.
+
+
+Archivos:
+
+para descargar bases de datos libres podemos visitar
+https://www.kaggle.com/
+
