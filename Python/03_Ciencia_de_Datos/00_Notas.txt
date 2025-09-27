@@ -78,3 +78,26 @@ print(diagonal)
 aleatoria = np.random.rand(2, 3)
 print(aleatoria)
 Estos métodos sirven para aplicaciones que van desde álgebra lineal hasta simulaciones estocásticas. Te recomiendo explorar más sobre métodos numéricos y álgebra lineal para sacar el máximo provecho de NumPy
+
+20250926:
+
+Diferencias de Listas y Arrays
+
+Rendimiento: NumPy es mucho más rápido y eficiente para operaciones matemáticas y científicas.
+Tipos de Datos: NumPy requiere homogeneidad de tipos, mientras que las listas de Python pueden contener múltiples tipos.
+Funcionalidad: NumPy proporciona una rica funcionalidad específica para cálculos numéricos.
+Slicing e Indexación: NumPy ofrece herramientas avanzadas para manipular subconjuntos de datos.
+NumPy es la mejor opción. 
+
+Para usos más generales y cuando se necesita mayor flexibilidad en los tipos de datos, las listas de Python son más adecuadas.
+
+Especificando Tipos de Datos (Datatypes)
+Al crear un array, podemos especificar el tipo de datos que contendrá utilizando el parámetro dtype. Esta especificación es crucial para la eficiencia y precisión en cálculos numéricos. Aquí se detallan algunos de los tipos de datos más comunes:
+
+int32: Entero de 32 bits.
+float32: Número de punto flotante de 32 bits.
+float64: Número de punto flotante de 64 bits (por defecto para números flotantes en NumPy).
+bool: Valores booleanos (True o False).
+complex64: Número complejo de 64 bits.
+complex128: Número complejo de 128 bits.
+str: Cadenas de texto.
