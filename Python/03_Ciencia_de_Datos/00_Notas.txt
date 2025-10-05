@@ -101,3 +101,24 @@ bool: Valores booleanos (True o False).
 complex64: Número complejo de 64 bits.
 complex128: Número complejo de 128 bits.
 str: Cadenas de texto.
+
+20251005
+Broadcasting:
+
+Broadcasting es una funcionalidad poderosa en NumPy que permite realizar operaciones aritméticas en arrays de diferentes tamaños y formas de manera eficiente. En lugar de iterar sobre cada elemento de los arrays para realizar las operaciones, NumPy extiende automáticamente los arrays más pequeños para que coincidan con las dimensiones de los más grandes, sin duplicar datos. Esto no solo optimiza el uso de la memoria, sino que también acelera significativamente las operaciones.
+El broadcasting permite que las operaciones entre arrays de diferentes dimensiones se realicen como si todos los arrays tuvieran la misma forma. NumPy extiende los arrays más pequeños a la forma del más grande de manera implícita, facilitando las operaciones sin necesidad de copiar los datos.
+
+Aplicaciones de Broadcasting:
+Aplicación de Descuentos: Supongamos que tenemos un array que representa los precios de varios productos y otro array con un descuento porcentual que se aplica a todos los productos. Con broadcasting, podemos aplicar el descuento sin necesidad de un bucle explícito.
+
+Importancia del Broadcasting:
+Broadcasting es crucial porque permite escribir código más conciso y legible, evitando bucles explícitos y aprovechando las optimizaciones internas de NumPy para realizar operaciones de manera rápida y eficiente. Esto es especialmente útil en análisis de datos y aprendizaje automático, donde se manejan grandes volúmenes de datos y se requieren cálculos rápidos.
+
+Reglas de Broadcasting:
+Para que el broadcasting funcione, las dimensiones de los arrays deben cumplir ciertas reglas:
+
+    1. Comparación desde la Última Dimensión: Las dimensiones se comparan desde la última hacia la primera.
+    2. Dimensiones Compatibles: Dos dimensiones son compatibles si son iguales o si una de ellas es 1.
+
+
+
