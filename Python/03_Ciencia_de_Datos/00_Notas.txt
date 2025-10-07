@@ -120,5 +120,19 @@ Para que el broadcasting funcione, las dimensiones de los arrays deben cumplir c
     1. Comparación desde la Última Dimensión: Las dimensiones se comparan desde la última hacia la primera.
     2. Dimensiones Compatibles: Dos dimensiones son compatibles si son iguales o si una de ellas es 1.
 
+20251006
+Elementos Unicos con numpy:
+Analizar opiniones de clientes sobre productos es vital para cualquier empresa. Al recolectar respuestas como "bueno", "excelente" o "malo", es crucial cuantificar cuántas veces cada término aparece. Aquí es donde entra en juego la eficiencia de NumPy para identificar elementos únicos y contar sus frecuencias, ofreciendo insights valiosos para guiar decisiones estratégicas.
 
+Copias V.S. Vistas:
+¿Qué diferencias existen entre copias y vistas al operar con arrays en NumPy?
+Al trabajar con NumPy, es posible acceder al buffer de datos internos de un array mediante una vista, sin copiar datos. Esto optimiza el rendimiento, pero puede generar problemas. Entender las diferencias entre una vista y una copia es esencial para realizar operaciones sin errores.
 
+Cómo diferencir entre copias y vistas?
+
+Se puede diferenciar entre una vista y una copia de un array original mediante la identificación de la dirección en memoria -con la función id(array_que_corresponda)- o con el método base (array_que_corresponda.base).
+
+Sin embargo, es más explícito y eficaz utilizar el método base:
+
+    1. Si un array es una vista de otro array original, el método o atributo .base del array vista apuntará al array original (es decir, indicará el array original).
+    2. Si el array es una copia, el método o atributo .base retornará None.
