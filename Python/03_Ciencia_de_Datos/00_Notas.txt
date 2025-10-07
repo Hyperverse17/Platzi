@@ -136,3 +136,11 @@ Sin embargo, es más explícito y eficaz utilizar el método base:
 
     1. Si un array es una vista de otro array original, el método o atributo .base del array vista apuntará al array original (es decir, indicará el array original).
     2. Si el array es una copia, el método o atributo .base retornará None.
+
+Reshape:
+Cambiar la Forma (Reshape) de un Array
+La función reshape permite cambiar la forma de un array sin cambiar sus datos. Es importante asegurarse de que el número total de elementos permanezca constante.
+Por ejemplo, un array de 12 elementos puede ser remodelado en una matriz de 3x4, 4x3, 2x6, etc., pero no en una matriz de 5x3.
+
+Flattening de Arrays Multidimensionales:
+El aplanamiento de arrays es el proceso de convertir un array multidimensional en un array unidimensional, es útil en algoritmos que requieren una entrada lineal o para operaciones de agregación. En NumPy, se puede aplanar un array usando flatten().
