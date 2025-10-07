@@ -21,3 +21,10 @@ print("4. Matriz Aleatoria: ")
 aleatoria = np.random.rand(3, 5) # np.random.rand(n,m) Crea una matriz de nxm con valores aleatorios entre 0 y 1 
 print(aleatoria)
 print()
+
+print("5. Matriz Aleatoria Pro: ")
+import numpy as np
+
+# Crear una matriz de 3 filas x 4 columnas con enteros aleatorios entre 5 y 30
+matriz = np.random.randint(5, 30, (3, 4))
+print(matriz)
