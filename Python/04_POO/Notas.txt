@@ -1,0 +1,34 @@
+La encapsulación en Python te ayuda a proteger datos sensibles y a mantener la integridad de tu aplicación. 
+Con un ejemplo claro de una biblioteca, se muestra cómo controlar el acceso a los atributos internos con atributos privados, validaciones y métodos getter y setter para evitar inconsistencias.
+
+
+¿Qué es la encapsulación en Python y cómo protege tus datos?
+
+La idea es simple: como en un banco, no accedes a la bóveda, hablas con el cajero. En Python, la encapsulación oculta los detalles internos de una clase y controla el acceso a los datos. 
+En un sistema de biblioteca, esto asegura la integridad de datos: nadie debería alterar desde fuera el estado real de un libro.
+
+
+¿Cómo evitar inconsistencias con préstamos y disponibilidad?
+
+Controla el flujo con un atributo de disponibilidad: si está disponible, se presta; si no, se informa que “no está disponible”.
+Evita retornos implícitos de None: devuelve un mensaje claro cuando no se puede prestar.
+Incrementa un contador interno de veces prestado al ejecutar el método prestar.
+Usa espopular para evaluar si un libro es popular: retorna true si fue prestado más de cinco veces.
+
+
+¿Qué problema surge al modificar datos directamente?
+
+Si desde fuera haces libro.veces_prestado = 10, el sistema mostrará “total préstamos 11” sin que haya ocurrido realmente. Esto rompe la integridad del dato.
+La solución: encapsular el contador y exponer acceso controlado con métodos.
+
+
+¿Cuándo usar un guion bajo y cuándo dos?
+Python ofrece dos niveles de señalización para atributos internos.
+
+¿Qué significa un solo guion bajo?
+Un solo guion bajo (por ejemplo, _veces_prestado) es una convención: indica “no toques esto desde fuera”.
+Aun así, es accesible externamente. Sirve como recordatorio, no como barrera real.
+
+¿Qué hace el doble guion bajo?
+Con doble guion bajo (__veces_prestado) se activa el name mangling: no podrás acceder directamente desde fuera del objeto.
+Si intentas leer o modificar ese atributo desde fuera, obtendrás un error: el mensaje indica que el atributo es interno y debe manejarse dentro de la clase.
